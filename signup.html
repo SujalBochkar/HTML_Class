@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interface</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: url(back1.jpg);
+        }
+        label{
+            font-size: 18px;
+        }
+        hr{
+            border: 1px solid rgb(255, 255, 255);
+            margin-bottom: 10px;
+        }
+        input[type = text] I :focus{
+            background-color: aqua;
+        }
+        button{
+            font-size: 15px;
+            font-weight: bold;
+            background-color: darkgreen ;
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+            width:100%;
+            width: 1;
+        }
+        cancel{
+            background-color: rgb(184, 1, 1)
+        }
+        button:hover{
+            opacity: 0.9;
+        }
+        input[type = "text"], input[type = "password"]
+        {
+            width: 100%;
+            font-size: 15px;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            border: none;
+            background: #eee1f0;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div>
+        <h1>Sign Up</h1>
+        <p><b>Already a member?</b> <a href=""> log in</a></p>
+        <hr><label><b>Email</b></label>
+        <input type="text" placeholder="Enter your Email">
+        <label><b>Password</b></label>
+        <input type="text" placeholder="Enter Password">
+        <label><b>Verify Password</b></label>
+        <input type="text" placeholder="Enter Password again">
+        <label>
+            <input type="checkbox" name="" checked="checked">
+            Remember Me
+        </label>
+        <p>I accept the T&C attachecd <a href=""> Terms & Conditions</a></p>
+    </div>
+    <div>
+        <button type="button" class="cancel">Cancel</button>
+        <button type="button">Submit</button>
+    </div>
+</form>
+</body>
+</html>
